@@ -16,11 +16,11 @@ namespace Какой_то_урок
     {
         private int kolPages = 0;
 
-
         public MainForm()
         {
             InitializeComponent();
         }
+
         private void Navigate(String address)
         {
             if (String.IsNullOrEmpty(address)) return;
@@ -31,7 +31,7 @@ namespace Какой_то_урок
             }
             try
             {
-                webBrowser.Navigate(new Uri(address));
+                ((WebBrowser)tabControl.SelectedTab.Controls[0]).Navigate(address);
             }
             catch (System.UriFormatException)
             {
@@ -54,34 +54,11 @@ namespace Какой_то_урок
             kolPages++;
         }
 
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            if(!String.IsNullOrEmpty(menuStripAdressLine.Text))
-            {
-                ((WebBrowser)tabControl.SelectedTab.Controls[0]).Navigate(menuStripAdressLine.Text);
-            }
-        }
-        
 
         void browser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             tabControl.SelectedTab.Text = ((WebBrowser)tabControl.SelectedTab.Controls[0]).DocumentTitle;
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        { 
-            WebBrowser browser = new WebBrowser();
-            browser.Visible = true;
-            browser.ScriptErrorsSuppressed = true;
-            browser.Dock = DockStyle.Fill;
-            browser.DocumentCompleted += browser_DocumentCompleted;
-
-            tabControl.TabPages.Add("новая");
-            tabControl.SelectedTab.Controls.Add(browser);
-            tabControl.SelectTab(kolPages);
-            kolPages++;
-        }
-
 
         private void webBrowser1_CanGoBackChanged(object sender, EventArgs e)
         {
@@ -89,13 +66,14 @@ namespace Какой_то_урок
         }
         private void menuStripGoBackBut_Click(object sender, EventArgs e)
         {
-            webBrowser.GoBack();
+            ((WebBrowser)tabControl.SelectedTab.Controls[0]).GoBack();
         }
 
 
         private void menuStripGoForwardBut_Click(object sender, EventArgs e)
         {
-            webBrowser.GoForward();
+            ((WebBrowser)tabControl.SelectedTab.Controls[0]).GoForward();
+
         }
         private void webBrowser_CanGoForwardChanged(object sender, EventArgs e)
         {
@@ -111,17 +89,14 @@ namespace Какой_то_урок
             }
         }
 
-        private void menuStripReloadBut_Click(object sender, EventArgs e)
+
+        private void menuStripRefreshBut_Click(object sender, EventArgs e)
         {
-            if (!webBrowser.Url.Equals("about:blank"))
-            {
-                webBrowser.Refresh();
-            } 
+            ((WebBrowser)tabControl.SelectedTab.Controls[0]).Refresh();
         }
 
-        private void menuStripSearchBut_Click(object sender, EventArgs e)
-        {
-            Navigate(menuStripAdressLine.Text);
-        }
+
+
+        
     }
 }
