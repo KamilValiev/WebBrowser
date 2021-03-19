@@ -30,141 +30,74 @@ namespace Какой_то_урок
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.menuStrip = new System.Windows.Forms.ToolStrip();
-            this.menuStripGoBackBut = new System.Windows.Forms.ToolStripButton();
-            this.menuStripGoForwardBut = new System.Windows.Forms.ToolStripButton();
-            this.menuStripReloadBut = new System.Windows.Forms.ToolStripButton();
-            this.menuStripAdressLine = new System.Windows.Forms.ToolStripTextBox();
-            this.menuStripSearchBut = new System.Windows.Forms.ToolStripButton();
-            this.menuStripAddPageBut = new System.Windows.Forms.ToolStripButton();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.menuStrip.SuspendLayout();
-            this.tabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolStripAdd = new System.Windows.Forms.ToolStripButton();
+            this.toolStripText = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripNext = new System.Windows.Forms.ToolStripButton();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip
+            // toolStrip
             // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuStripGoBackBut,
-            this.menuStripGoForwardBut,
-            this.menuStripReloadBut,
-            this.menuStripAdressLine,
-            this.menuStripSearchBut,
-            this.menuStripAddPageBut});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 31);
-            this.menuStrip.TabIndex = 0;
-            this.menuStrip.Text = "menuStrip";
+            this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripAdd,
+            this.toolStripText,
+            this.toolStripNext});
+            this.toolStrip.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(800, 27);
+            this.toolStrip.TabIndex = 0;
+            this.toolStrip.Text = "tStrip";
             // 
-            // menuStripGoBackBut
+            // toolStripAdd
             // 
-            this.menuStripGoBackBut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.menuStripGoBackBut.Image = global::Какой_то_урок.Properties.Resources.go_next_icon_180851;
-            this.menuStripGoBackBut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuStripGoBackBut.Name = "menuStripGoBackBut";
-            this.menuStripGoBackBut.Size = new System.Drawing.Size(29, 28);
-            this.menuStripGoBackBut.Text = "toolStripButton1";
-            this.menuStripGoBackBut.ToolTipText = "Нажмите, чтобы вернуться\r\n";
-            this.menuStripGoBackBut.Click += new System.EventHandler(this.menuStripGoBackBut_Click);
+            this.toolStripAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripAdd.Image")));
+            this.toolStripAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripAdd.Name = "toolStripAdd";
+            this.toolStripAdd.Size = new System.Drawing.Size(29, 24);
+            this.toolStripAdd.Text = "+";
+            this.toolStripAdd.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // menuStripGoForwardBut
+            // toolStripText
             // 
-            this.menuStripGoForwardBut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.menuStripGoForwardBut.Image = global::Какой_то_урок.Properties.Resources.go_previous_icon_1808521;
-            this.menuStripGoForwardBut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuStripGoForwardBut.Name = "menuStripGoForwardBut";
-            this.menuStripGoForwardBut.Size = new System.Drawing.Size(29, 28);
-            this.menuStripGoForwardBut.Text = "toolStripButton2";
-            this.menuStripGoForwardBut.ToolTipText = "Нажмите, чтобы перейти вперёд\r\n\r\n\r\n";
-            this.menuStripGoForwardBut.Click += new System.EventHandler(this.menuStripGoForwardBut_Click);
+            this.toolStripText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripText.Name = "toolStripText";
+            this.toolStripText.Size = new System.Drawing.Size(100, 27);
             // 
-            // menuStripReloadBut
+            // toolStripNext
             // 
-            this.menuStripReloadBut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.menuStripReloadBut.Image = global::Какой_то_урок.Properties.Resources.view_refresh_icon_180918;
-            this.menuStripReloadBut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuStripReloadBut.Name = "menuStripReloadBut";
-            this.menuStripReloadBut.Size = new System.Drawing.Size(29, 28);
-            this.menuStripReloadBut.Text = "toolStripButton3";
-            this.menuStripReloadBut.ToolTipText = "Обновить эту страницу\r\n";
-            this.menuStripReloadBut.Click += new System.EventHandler(this.menuStripReloadBut_Click);
+            this.toolStripNext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripNext.Image = ((System.Drawing.Image)(resources.GetObject("toolStripNext.Image")));
+            this.toolStripNext.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripNext.Name = "toolStripNext";
+            this.toolStripNext.Size = new System.Drawing.Size(32, 24);
+            this.toolStripNext.Text = "Go";
+            this.toolStripNext.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
-            // menuStripAdressLine
+            // tabControl1
             // 
-            this.menuStripAdressLine.AccessibleDescription = "";
-            this.menuStripAdressLine.AccessibleName = "";
-            this.menuStripAdressLine.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.menuStripAdressLine.Name = "menuStripAdressLine";
-            this.menuStripAdressLine.Size = new System.Drawing.Size(400, 31);
-            this.menuStripAdressLine.KeyDown += new System.Windows.Forms.KeyEventHandler(this.menuStripAdressLine_KeyDown);
-            // 
-            // menuStripSearchBut
-            // 
-            this.menuStripSearchBut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.menuStripSearchBut.Image = global::Какой_то_урок.Properties.Resources.edit_find_icon_180814;
-            this.menuStripSearchBut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuStripSearchBut.Name = "menuStripSearchBut";
-            this.menuStripSearchBut.Size = new System.Drawing.Size(29, 28);
-            this.menuStripSearchBut.Click += new System.EventHandler(this.menuStripSearchBut_Click);
-            // 
-            // menuStripAddPageBut
-            // 
-            this.menuStripAddPageBut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.menuStripAddPageBut.Image = ((System.Drawing.Image)(resources.GetObject("menuStripAddPageBut.Image")));
-            this.menuStripAddPageBut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.menuStripAddPageBut.Name = "menuStripAddPageBut";
-            this.menuStripAddPageBut.Size = new System.Drawing.Size(29, 28);
-            this.menuStripAddPageBut.Text = "+";
-            // 
-            // tabControl
-            // 
-            this.tabControl.Controls.Add(this.tabPage1);
-            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Location = new System.Drawing.Point(0, 31);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(800, 419);
-            this.tabControl.TabIndex = 1;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.webBrowser);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 390);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // webBrowser
-            // 
-            this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser.Location = new System.Drawing.Point(3, 3);
-            this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser.Name = "webBrowser";
-            this.webBrowser.Size = new System.Drawing.Size(786, 384);
-            this.webBrowser.TabIndex = 0;
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(800, 423);
+            this.tabControl1.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.toolStrip);
             this.Name = "MainForm";
-            this.Text = "Opera";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            this.tabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,16 +105,11 @@ namespace Какой_то_урок
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip menuStrip;
-        private System.Windows.Forms.ToolStripButton menuStripAddPageBut;
-        private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.ToolStripTextBox menuStripAdressLine;
-        private System.Windows.Forms.ToolStripButton menuStripSearchBut;
-        private System.Windows.Forms.ToolStripButton menuStripGoBackBut;
-        private System.Windows.Forms.ToolStripButton menuStripGoForwardBut;
-        private System.Windows.Forms.ToolStripButton menuStripReloadBut;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.WebBrowser webBrowser;
+        private System.Windows.Forms.ToolStrip toolStrip;
+        private System.Windows.Forms.ToolStripButton toolStripAdd;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.ToolStripTextBox toolStripText;
+        private System.Windows.Forms.ToolStripButton toolStripNext;
     }
 }
 
