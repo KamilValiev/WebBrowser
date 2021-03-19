@@ -1,0 +1,10 @@
+C:\Users\camil\source\repos\Какой то урок\bin\Debug\Какой то урок.exe.config
+C:\Users\camil\source\repos\Какой то урок\bin\Debug\Какой то урок.exe
+C:\Users\camil\source\repos\Какой то урок\bin\Debug\Какой то урок.pdb
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\WebBrowser.csprojAssemblyReference.cache
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\Какой_то_урок.MainForm.resources
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\Какой_то_урок.Properties.Resources.resources
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\WebBrowser.csproj.GenerateResource.cache
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\WebBrowser.csproj.CoreCompileInputs.cache
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\Какой то урок.exe
+C:\Users\camil\source\repos\Какой то урок\obj\Debug\Какой то урок.pdb
