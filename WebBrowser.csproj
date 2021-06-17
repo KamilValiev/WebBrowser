@@ -95,5 +95,17 @@
   <ItemGroup>
     <None Include="Resources\go_previous_icon_1808521.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_remove_icon_180862.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_add_icon_180860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_bottom_icon_180840.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_unavailable_icon_180783.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,19 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="list_remove_icon_180862" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list_remove_icon_180862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="edit_find_icon_180814" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_find_icon_180814.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="go_previous_icon_180852" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\go_previous_icon_180852.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="list_add_icon_180860" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list_add_icon_180860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="go_next_icon_180851" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\go_next_icon_180851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="view_refresh_icon_180918" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view_refresh_icon_180918.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="go_previous_icon_180852" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_previous_icon_180852.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="go_bottom_icon_180840" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\go_bottom_icon_180840.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="go_previous_icon_1808521" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\go_previous_icon_1808521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_refresh_icon_180918" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view_refresh_icon_180918.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="action_unavailable_icon_180783" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\action_unavailable_icon_180783.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

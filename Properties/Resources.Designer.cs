@@ -63,9 +63,29 @@ namespace Какой_то_урок.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap action_unavailable_icon_180783 {
+            get {
+                object obj = ResourceManager.GetObject("action_unavailable_icon_180783", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_find_icon_180814 {
             get {
                 object obj = ResourceManager.GetObject("edit_find_icon_180814", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap go_bottom_icon_180840 {
+            get {
+                object obj = ResourceManager.GetObject("go_bottom_icon_180840", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +116,26 @@ namespace Какой_то_урок.Properties {
         internal static System.Drawing.Bitmap go_previous_icon_1808521 {
             get {
                 object obj = ResourceManager.GetObject("go_previous_icon_1808521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list_add_icon_180860 {
+            get {
+                object obj = ResourceManager.GetObject("list_add_icon_180860", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list_remove_icon_180862 {
+            get {
+                object obj = ResourceManager.GetObject("list_remove_icon_180862", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
